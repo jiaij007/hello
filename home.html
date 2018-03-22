@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/home.css">
+	<title>Document</title>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">动漫</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#ad-carousel">首页</a></li>
+                <li><a href="#summary-container">简述</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">漫画 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#feature-tab" data-tab="tab-chrome">火影忍者</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-firefox">初音未来</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-safari">星矢圣斗士</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-opera">海贼王</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-ie">黑岩射手</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- 广告轮播 -->
+<div id="ad-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#ad-carousel" data-slide-to="1"></li>
+        <li data-target="#ad-carousel" data-slide-to="2"></li>
+        <li data-target="#ad-carousel" data-slide-to="3"></li>
+        <li data-target="#ad-carousel" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="images/1.jpg" alt="1 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>火影忍者</h1>
+
+                    <p>故事从主人公漩涡鸣人的孤儿生活开始，四代火影为了保护村子，将攻击村子九尾妖狐封印到了他体内，鸣人因此受尽了村人的冷落，只是拼命用各种恶作剧试图吸引大家的注意力。好在还是有伊鲁卡老师的关心，鸣人的性格才没有变得扭曲，他总是干劲十足、非常乐观。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="http://www.google.cn/intl/zh-CN/chrome/browser/"
+                          role="button" target="_blank">点我下载</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/2.jpg" alt="2 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>初音未来</h1>
+
+                    <p>初音：“最初的声音（初めての音）”“出发点” “最初的VOCALOID2”
+ミク：汉字写作“未来”，指“VOCALOID所象征的将来音乐之可能性”。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="http://www.firefox.com.cn/download/" target="_blank"
+                          role="button">点我下载</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/3.jpg" alt="3 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>星矢圣斗士</h1>
+
+                    <p>讲述了以星矢为代表的“五位青铜圣斗士”勇闯圣域12宫，打败众多黄金圣斗士，拯救女神雅典娜的故事</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="http://www.apple.com/cn/safari/" target="_blank"
+                          role="button">点我下载</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/4.jpg" alt="4 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>海贼王</h1>
+
+                    <p>为了寻找传说中海贼王罗杰所留下的大秘宝“ONE PIECE”，无数海贼扬起旗帜，互相争斗。有一个梦想成为海盗的少年叫路飞，他因误食“恶魔果实”而成为了橡皮人，在获得超人能力的同时付出了一辈子无法游泳的代价。十年后，路飞为实现与因救他而断臂的香克斯的约定而出海，他在旅途中不断寻找志同道合的伙伴，开始了以成为海贼王为目标的伟大的冒险旅程。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="http://www.opera.com/zh-cn" target="_blank"
+                          role="button">点我下载</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/5.jpg" alt="5 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>黑岩射手</h1>
+
+                    <p>升上初中的黑衣麻陶在开学当天，与特别醒目的同班同学--小鸟游优美相遇。天真烂漫的麻陶、成熟像个小大人的优美，个性南辕北辙的两人在相处中建立起深厚的友情。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="http://ie.microsoft.com/" target="_blank"
+                          role="button">点我下载</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#ad-carousel" data-slide="prev"><span
+            class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#ad-carousel" data-slide="next"><span
+            class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+
+
+<!-- 主要内容 -->
+<div class="container summary">
+
+    <!-- 简介 -->
+    <div class="row" id="summary-container">
+        <div class="col-md-3">
+            <img class="img-rounded" src="images/11.png" alt="龙珠">
+
+            <h2>龙珠</h2>
+
+
+            <p><a class="btn btn-default" href="#" role="button">阅读</a></p>
+        </div>
+        <div class="col-md-3">
+            <img class="img-rounded" src="images/22.jpg" alt="火影忍者">
+
+            <h2>火影忍者</h2>
+
+            
+            <p><a class="btn btn-default" href="#" role="button">阅读</a></p>
+        </div>
+        <div class="col-md-3">
+            <img class="img-rounded" src="images/33.png" alt="海贼王">
+
+            <h2>海贼王</h2>
+
+            
+            <p><a class="btn btn-default" href="#" role="button">阅读</a></p>
+        </div>
+        <div class="col-md-3">
+            <img class="img-rounded" src="images/44.jpg" alt="灌篮高手">
+
+            <h2>灌篮高手</h2>
+
+           
+            <p><a class="btn btn-default" href="#" role="button">阅读</a></p>
+        </div>
+    </div>
+
+    <!-- 特性 -->
+
+    <hr class="feature-divider">
+
+    <ul class="nav nav-tabs" role="tablist" id="feature-tab">
+        <li class="active"><a href="#tab-chrome" role="tab" data-toggle="tab">火影忍者</a></li>
+        <li><a href="#tab-firefox" role="tab" data-toggle="tab">初音未来</a></li>
+        <li><a href="#tab-safari" role="tab" data-toggle="tab">星矢圣斗士</a></li>
+        <li><a href="#tab-opera" role="tab" data-toggle="tab">海贼王</a></li>
+        <li><a href="#tab-ie" role="tab" data-toggle="tab">黑岩射手</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab-chrome">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">火影忍者</h2>
+
+                    <p class="lead">故事从主人公漩涡鸣人的孤儿生活开始，四代火影为了保护村子，将攻击村子九尾妖狐封印到了他体内，鸣人因此受尽了村人的冷落，只是拼命用各种恶作剧试图吸引大家的注意力。好在还是有伊鲁卡老师的关心，鸣人的性格才没有变得扭曲，他总是干劲十足、非常乐观。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/huo.jpeg"
+                         >
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-firefox">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/chu.jpg">
+                         
+                </div>
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">初音未来
+                    </h2>
+
+                    <p class="lead">初音：“最初的声音（初めての音）”“出发点” “最初的VOCALOID2”
+ミク：汉字写作“未来”，指“VOCALOID所象征的将来音乐之可能性”。</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-safari">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">星矢圣斗士</h2>
+
+                    <p class="lead">讲述了以星矢为代表的“五位青铜圣斗士”勇闯圣域12宫，打败众多黄金圣斗士，拯救女神雅典娜的故事</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/xing.jpg">
+                         
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-opera">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/hai.jpeg"
+                         alt="Opera">
+                </div>
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">海贼王
+                    </h2>
+
+                    <p class="lead">为了寻找传说中海贼王罗杰所留下的大秘宝“ONE PIECE”，无数海贼扬起旗帜，互相争斗。有一个梦想成为海盗的少年叫路飞，他因误食“恶魔果实”而成为了橡皮人，在获得超人能力的同时付出了一辈子无法游泳的代价。十年后，路飞为实现与因救他而断臂的香克斯的约定而出海，他在旅途中不断寻找志同道合的伙伴，开始了以成为海贼王为目标的伟大的冒险旅程。</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-ie">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">黑岩射手</h2>
+
+                    <p class="lead">升上初中的黑衣麻陶在开学当天，与特别醒目的同班同学--小鸟游优美相遇。天真烂漫的麻陶、成熟像个小大人的优美，个性南辕北辙的两人在相处中建立起深厚的友情。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/hei.jpeg"
+                         alt="IE">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 关于 -->
+    <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+                    <h4 class="modal-title" id="modal-label">关于</h4>
+                </div>
+                <div class="modal-body">
+                    <p>动漫网</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p class="pull-right"><a href="#top">回到顶部</a></p>
+
+        
+    </footer>
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('#ad-carousel').carousel();
+        $('#menu-nav .navbar-collapse a').click(function (e) {
+            var href = $(this).attr('href');
+            var tabId = $(this).attr('data-tab');
+            if ('#' !== href) {
+                e.preventDefault();
+                $(document).scrollTop($(href).offset().top - 70);
+                if (tabId) {
+                    $('#feature-tab a[href=#' + tabId + ']').tab('show');
+                }
+            }
+        });
+    });
+</script>
+	
+</body>
+</html>
